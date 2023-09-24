@@ -15,13 +15,13 @@ public class Scope {
         Scope myScope = new Scope();
 
         // Accessing the static variable
-        System.out.println("Static Variable: " + STATIC_VAR);
+        System.out.println("Static Variable: " + STATIC_VAR); // 100
 
         // Accessing the instance variable
-        System.out.println("Instance Variable: " + myScope.instanceVar);
+        System.out.println("Instance Variable: " + myScope.instanceVar); // 50
 
         // Accessing the local variable
-        System.out.println("Local Variable: " + localVar);
+        System.out.println("Local Variable: " + localVar); // 10
 
         // Demonstrating the variable scope via a method call
 //        myScope.myMethod();
@@ -30,9 +30,10 @@ public class Scope {
     public void myMethod() {
         // Local Variable in a different method
         int localVar = 20;
+        System.out.println(localVar);
 
         // Accessing the static variable within an instance method
-        System.out.println("Static Variable inside myMethod: " + STATIC_VAR);
+        System.out.println("Static Variable inside myMethod: " + STATIC_VAR); // 100
 
         // Accessing the instance variable within an instance method
         System.out.println("Instance Variable inside myMethod: " + instanceVar);
