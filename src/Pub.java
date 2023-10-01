@@ -1,16 +1,26 @@
 public class Pub {
     public static void main(String[] args) {
-        pub();
+        switchCase();
     }
 
     public static void pub() {
         // Implement your code here
         // Only the person with the age more than 18 are accept in our pub.
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How old are you");
+        int old = scanner.nextInt();
+        if (old > 18) {
+            System.out.println("you can pass");
+        } else if (old < 18) {
+            System.out.println("you can't pass");
+        } else {
+            System.out.println("you can pass but can't drink");
+        }
     }
 
     public static void conditional() {
         // Using if statement
-        int a = 10;
+        int a = 3;
         if (a > 5) {
             System.out.println("The value of 'a' is greater than 5.");
         }
@@ -34,6 +44,23 @@ public class Pub {
         } else {
             System.out.println("Sorry, you failed.");
         }
+    }
+
+    public static void logical() {
+        boolean isRaining = true;
+        boolean isTrafficJam = false;
+        boolean goPicnic = isRaining || isTrafficJam;
+
+        // Quiz 1
+        int a = 10;
+        int b = 20;
+        boolean result = (a < 15) && (b > 10);
+        // Quiz 2
+        int x = 15;
+        int y = 25;
+        int c = 35;
+        boolean outcome;
+        outcome = (x < y) || (c > 40);
     }
 
     public static void switchCase() {
