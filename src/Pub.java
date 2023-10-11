@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Pub {
     public static void main(String[] args) {
         switchCase();
